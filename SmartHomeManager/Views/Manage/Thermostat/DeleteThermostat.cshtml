@@ -1,0 +1,15 @@
+﻿@model SmartHomeManager.Models.Thermostat
+
+@{
+    ViewData["Title"] = "Delete Thermostat";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<p>Are you sure you want to delete the Thermostat <strong>@Model.Name</strong>?</p>
+
+<form asp-action="DeleteThermostat" method="post">
+    <input type="hidden" name="id" value="@Model.Id" />
+    <button type="submit" class="btn btn-danger">Yes, Delete</button>
+    <a href="@Url.Action("Index", "Manage")" class="btn btn-secondary">Cancel</a>
+</form>

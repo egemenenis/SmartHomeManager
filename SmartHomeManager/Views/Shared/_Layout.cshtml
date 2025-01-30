@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] - Smart Home Management</title>
+
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f1f4f8;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+        }
+
+
+        .wrapper_smart {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .navbar_smart {
+            background-color: #212529;
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-bottom: 2px solid #ff6f61;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .navbar_smart_brand {
+            font-size: 1.2rem;
+            color: #ff6f61;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: color 0.3s ease;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+            .navbar_smart_brand:hover {
+                color: #ffffff;
+            }
+
+
+        .navbar_smart_nav .nav-link {
+            color: #d1d1d1 !important;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            font-weight: 500;
+            letter-spacing: 1px;
+            padding: 8px 15px;
+            transition: all 0.3s ease;
+        }
+
+            .navbar_smart_nav .nav-link:hover {
+                color: #ff6f61 !important;
+                background-color: rgba(255, 111, 97, 0.2);
+                border-radius: 4px;
+                transform: scale(1.05);
+            }
+
+        .navbar_smart_nav .nav-item + .nav-item {
+            margin-left: 20px;
+        }
+
+        .navbar-toggler {
+            border: none;
+            background-color: transparent;
+            padding: 12px; 
+        }
+
+        .navbar-toggler-icon {
+            background-color: #ff6f61;
+            width: 35px;
+            height: 3px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+            .navbar-toggler-icon:hover {
+                background-color: #ffffff;
+            }
+
+
+        .navbar-collapse {
+            justify-content: flex-end;
+        }
+
+        .content_wrapper_smart {
+            margin-top: 70px;
+            padding: 40px 30px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            padding-top: 70px;
+        }
+
+
+        .footer_smart {
+            background-color: #2f3542;
+            color: #d1d1d1;
+            padding: 40px 20px;
+            text-align: center;
+            font-size: 1rem;
+            border-top: 5px solid #ff6f61;
+            margin-top: auto;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+            .footer_smart a {
+                color: #ff6f61;
+                text-decoration: none;
+                font-weight: 600;
+                transition: 0.3s;
+            }
+
+                .footer_smart a:hover {
+                    text-decoration: underline;
+                }
+
+            .footer_smart .social-icons a {
+                color: #ffffff;
+                margin: 0 15px;
+                font-size: 1.5rem;
+                transition: 0.3s;
+            }
+
+                .footer_smart .social-icons a:hover {
+                    color: #ff6f61;
+                }
+    </style>
+
+</head>
+<body>
+    <div class="wrapper_smart">
+        <header>
+            <nav class="navbar_smart navbar-expand-lg navbar-dark">
+                <a class="navbar_smart_brand" href="/">Smart Home</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSmartNav" aria-controls="navbarSmartNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSmartNav">
+                    <ul class="navbar_smart_nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Device/Index">Devices</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/User/Index">Users</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Security/Index">Settings</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Account/Login">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Account/Register">Sign Up</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+        </header>
+
+        <div class="content_wrapper_smart">
+            <div class="container my-5">
+                @RenderBody()
+            </div>
+        </div>
+
+        <footer class="footer_smart">
+            <p>&copy; 2025 Smart Home Management. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p><a href="/privacy-policy">Privacy Policy</a> | <a href="/terms">Terms of Use</a></p>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</body>
+</html>

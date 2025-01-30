@@ -1,0 +1,130 @@
+﻿@model SmartHomeManager.Models.ErrorViewModel
+
+@{
+    ViewData["Title"] = "Error";
+}
+
+<div class="container d-flex justify-content-center align-items-center vh-100 error-card">
+    <div class="card shadow-lg rounded-4 border-light p-5 w-75 text-center error-card">
+        <div class="error-background"></div> 
+        
+        <div class="card-body">
+            <h1 class="display-1 text-danger">
+                <i class="fas fa-exclamation-triangle"></i>
+            </h1>
+            <h2 class="mb-3 font-weight-bold">Oops! Something Went Wrong</h2>
+            <p class="lead text-muted">
+                We're sorry, but something went wrong on our end. Please try again later.
+            </p>
+
+            @if (Model.StatusCode == 404)
+            {
+                <div class="alert alert-warning mt-3" role="alert">
+                    <h4 class="alert-heading">Page Not Found</h4>
+                    <p>The page you are looking for could not be found. It might have been moved or deleted.</p>
+                </div>
+            }
+            else if (Model.StatusCode == 500)
+            {
+                <div class="alert alert-danger mt-3" role="alert">
+                    <h4 class="alert-heading">Server Error</h4>
+                    <p>There was an error processing your request on the server. Please try again later.</p>
+                </div>
+            }
+            else
+            {
+                <div class="alert alert-secondary mt-3" role="alert">
+                    <h4 class="alert-heading">Unexpected Error</h4>
+                    <p>An unexpected error occurred. We're working on it, please try again shortly.</p>
+                </div>
+            }
+
+            <div class="mt-4">
+                <a href="@Url.Action("Index", "Home")" class="btn btn-primary btn-lg">
+                    <i class="fas fa-home"></i> Go to Homepage
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .error-card {
+        background-image: url('https://img.freepik.com/free-photo/still-life-space-assortment-with-astronaut_23-2149101766.jpg?t=st=1738158306~exp=1738161906~hmac=d2c86fbd949883a6b1ed57acc15c29e7c171a64ccdae927df8e06b18d2b3e960&w=1380');
+        background-size: initial;
+        background-position: center;
+        background-attachment: fixed;
+        position: relative;
+        margin-top: -100px;
+    }
+
+    .error-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url('https://img.freepik.com/free-vector/404-error-with-tired-person-concept-illustration_114360-7899.jpg?t=st=1738157749~exp=1738161349~hmac=353d8767878e1df1397853dc0750bd2d8331761e2004b0156143090b559f3b01&w=740');
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+    }
+
+    .card {
+        border: none;
+        border-radius: 15px;
+        position: relative;
+    }
+
+    .card-body {
+        background: rgba(255, 255, 255, 0.9);
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .display-1 {
+        font-size: 6rem;
+        position: relative;
+        z-index: 2;
+    }
+
+    h2 {
+        font-size: 2rem;
+        color: #343a40;
+    }
+
+    .alert-heading {
+        font-weight: 600;
+    }
+
+    .alert {
+        font-size: 1.1rem;
+    }
+
+    .btn-lg {
+        font-size: 1.25rem;
+        padding: 12px 24px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border-radius: 25px;
+    }
+
+    .card-body,
+    .btn {
+        transition: all 0.3s ease;
+    }
+
+        .card-body:hover {
+            box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+        border-color: #004085;
+    }
+
+</style>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">

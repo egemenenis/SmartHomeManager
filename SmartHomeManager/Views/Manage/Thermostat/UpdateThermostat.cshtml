@@ -1,0 +1,59 @@
+﻿@model SmartHomeManager.Models.Thermostat
+
+@{
+    ViewData["Title"] = "Update Thermostat";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form asp-action="UpdateThermostat" method="post">
+    <div class="form-group">
+        <label asp-for="Name" class="control-label"></label>
+        <input asp-for="Name" class="form-control" value="@Model.Name" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Type" class="control-label"></label>
+        <input asp-for="Type" class="form-control" value="Thermostat" readonly />
+        <span asp-validation-for="Type" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="ApplicationUserId" class="control-label"></label>
+        <select asp-for="ApplicationUserId" class="form-control" asp-items="@(new SelectList(ViewBag.Users, "Id", "UserName"))">
+        </select>
+        <span asp-validation-for="ApplicationUserId" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="IsOn" class="control-label"></label>
+        <input asp-for="IsOn" type="checkbox" value="@Model.IsOn" />
+        <span asp-validation-for="IsOn" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Temperature" class="control-label"></label>
+        <input asp-for="Temperature" class="form-control" value="@Model.Temperature" />
+        <span asp-validation-for="Temperature" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="RoomId" class="control-label"></label>
+        <select asp-for="RoomId" class="form-control" asp-items="@(new SelectList(ViewBag.Rooms, "Id", "Name"))">
+        </select>
+        <span asp-validation-for="RoomId" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="DeviceType" class="control-label"></label>
+        <input asp-for="DeviceType" class="form-control" value="Thermostat" readonly />
+        <span asp-validation-for="DeviceType" class="text-danger"></span>
+    </div>
+
+    <hr />
+
+    <button type="submit" class="btn btn-primary">Update Thermostat</button>
+</form>
+
+<a href="@Url.Action("Index", "Manage")" class="btn btn-secondary mt-3">Back to Device Management</a>

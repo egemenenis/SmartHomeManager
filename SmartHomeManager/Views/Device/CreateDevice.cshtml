@@ -1,0 +1,119 @@
+﻿<title>Device Management</title>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-4 sidebar">
+            <h4>Add Device</h4>
+            <div class="list-group">
+                <a href="@Url.Action("CreateCamera", "Device")" class="list-group-item list-group-item-action">
+                    <i class="fas fa-camera"></i> Create Camera
+                </a>
+                <a href="@Url.Action("CreateSensor", "Device")" class="list-group-item list-group-item-action">
+                    <i class="fas fa-microchip"></i> Create Sensor
+                </a>
+                <a href="@Url.Action("CreateDoorLock", "Device")" class="list-group-item list-group-item-action">
+                    <i class="fas fa-lock"></i> Create Door Lock
+                </a>
+                <a href="@Url.Action("CreateThermostat", "Device")" class="list-group-item list-group-item-action">
+                    <i class="fas fa-thermometer"></i> Create Thermostat
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr class="hr-divider" />
+
+<div class="container mt-5">
+    <div class="text-center mb-4">
+        <a href="@Url.Action("Index", "Device")" class="btn btn-primary btn-lg btn-hover">
+            <i class="fas fa-list"></i> Back to Device List
+        </a>
+        <a href="@Url.Action("Index", "Manage")" class="btn btn-secondary btn-lg btn-hover">
+            <i class="fas fa-info"></i> Back to Device Management
+        </a>
+    </div>
+</div>
+
+<style>
+    .sidebar {
+        background-color: #2c3e50;
+        color: white;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .sidebar h4 {
+        font-size: 1.6rem;
+        font-weight: 600;
+        margin-bottom: 25px;
+        text-transform: uppercase;
+        color: #ecf0f1;
+    }
+
+    .list-group-item {
+        border: none;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        padding: 18px;
+        font-size: 1.1rem;
+        color: #ecf0f1;
+        background-color: #34495e;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .list-group-item:hover {
+        background-color: #007bff;
+        transform: translateX(8px);
+        color: white;
+    }
+
+    .list-group-item i {
+        margin-right: 10px;
+    }
+
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+        border-color: #004085;
+        transform: scale(1.05);
+    }
+
+    .btn-secondary {
+        background-color: #6c757d;
+        border-color: #6c757d;
+        color: white;
+    }
+
+    .btn-secondary:hover {
+        background-color: #5a6268;
+        border-color: #545b62;
+        transform: scale(1.05);
+    }
+
+    .btn-hover {
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .btn-hover:hover {
+        transform: scale(1.1);
+    }
+
+    .hr-divider {
+        border: 0;
+        border-top: 2px solid #ddd;
+        margin: 40px 0;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .mb-4 {
+        margin-bottom: 1.5rem;
+    }
+</style>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">

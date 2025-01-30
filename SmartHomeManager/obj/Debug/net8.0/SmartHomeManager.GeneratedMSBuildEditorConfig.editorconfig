@@ -1,0 +1,139 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = SmartHomeManager
+build_property.RootNamespace = SmartHomeManager
+build_property.ProjectDir = C:\Users\egemen.ertas\Desktop\SmartHomeManager\SmartHomeManager\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\egemen.ertas\Desktop\SmartHomeManager\SmartHomeManager
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/egemen.ertas/Desktop/SmartHomeManager/SmartHomeManager/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/egemen.ertas/Desktop/SmartHomeManager/SmartHomeManager/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/egemen.ertas/Desktop/SmartHomeManager/SmartHomeManager/Views/Device/CreateCamera.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV2aWNlXENyZWF0ZUNhbWVyYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/egemen.ertas/Desktop/SmartHomeManager/SmartHomeManager/Views/Device/CreateDevice.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV2aWNlXENyZWF0ZURldmljZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/egemen.ertas/Desktop/SmartHomeManager/SmartHomeManager/Views/Device/CreateDoorLock.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV2aWNlXENyZWF0ZURvb3JMb2NrLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/egemen.ertas/Desktop/SmartHomeManager/SmartHomeManager/Views/Device/CreateSensor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV2aWNlXENyZWF0ZVNlbnNvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/egemen.ertas/Desktop/SmartHomeManager/SmartHomeManager/Views/Device/CreateThermostat.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV2aWNlXENyZWF0ZVRoZXJtb3N0YXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/egemen.ertas/Desktop/SmartHomeManager/SmartHomeManager/Views/Device/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV2aWNlXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/egemen.ertas/Desktop/SmartHomeManager/SmartHomeManager/Views/Device/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV2aWNlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/egemen.ertas/Desktop/SmartHomeManager/SmartHomeManager/Views/Home/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFcnJvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/egemen.ertas/Desktop/SmartHomeManager/SmartHomeManager/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/egemen.ertas/Desktop/SmartHomeManager/SmartHomeManager/Views/Home/LearnMore.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMZWFybk1vcmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/egemen.ertas/Desktop/SmartHomeManager/SmartHomeManager/Views/Manage/Camera/DeleteCamera.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlXENhbWVyYVxEZWxldGVDYW1lcmEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/egemen.ertas/Desktop/SmartHomeManager/SmartHomeManager/Views/Manage/Camera/UpdateCamera.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlXENhbWVyYVxVcGRhdGVDYW1lcmEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/egemen.ertas/Desktop/SmartHomeManager/SmartHomeManager/Views/Manage/DoorLock/DeleteDoorLock.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlXERvb3JMb2NrXERlbGV0ZURvb3JMb2NrLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/egemen.ertas/Desktop/SmartHomeManager/SmartHomeManager/Views/Manage/DoorLock/UpdateDoorLock.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlXERvb3JMb2NrXFVwZGF0ZURvb3JMb2NrLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/egemen.ertas/Desktop/SmartHomeManager/SmartHomeManager/Views/Manage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/egemen.ertas/Desktop/SmartHomeManager/SmartHomeManager/Views/Manage/Sensor/DeleteSensor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlXFNlbnNvclxEZWxldGVTZW5zb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/egemen.ertas/Desktop/SmartHomeManager/SmartHomeManager/Views/Manage/Sensor/UpdateSensor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlXFNlbnNvclxVcGRhdGVTZW5zb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/egemen.ertas/Desktop/SmartHomeManager/SmartHomeManager/Views/Manage/Thermostat/DeleteThermostat.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlXFRoZXJtb3N0YXRcRGVsZXRlVGhlcm1vc3RhdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/egemen.ertas/Desktop/SmartHomeManager/SmartHomeManager/Views/Manage/Thermostat/UpdateThermostat.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlXFRoZXJtb3N0YXRcVXBkYXRlVGhlcm1vc3RhdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/egemen.ertas/Desktop/SmartHomeManager/SmartHomeManager/Views/Security/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VjdXJpdHlcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/egemen.ertas/Desktop/SmartHomeManager/SmartHomeManager/Views/Security/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VjdXJpdHlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/egemen.ertas/Desktop/SmartHomeManager/SmartHomeManager/Views/Security/ReportDevice.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VjdXJpdHlcUmVwb3J0RGV2aWNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/egemen.ertas/Desktop/SmartHomeManager/SmartHomeManager/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/egemen.ertas/Desktop/SmartHomeManager/SmartHomeManager/Views/User/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/egemen.ertas/Desktop/SmartHomeManager/SmartHomeManager/Views/User/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/egemen.ertas/Desktop/SmartHomeManager/SmartHomeManager/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/egemen.ertas/Desktop/SmartHomeManager/SmartHomeManager/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/egemen.ertas/Desktop/SmartHomeManager/SmartHomeManager/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-ququsu77qm

@@ -1,0 +1,100 @@
+﻿@model SmartHomeManager.Models.Device
+
+@{
+    ViewData["Title"] = "Device Details";
+}
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h1 class="display-4 text-primary">@Model.Name</h1>
+            <p class="lead text-muted">Device Details</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card shadow-lg">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="card-title mb-0">Device Information</h5>
+                </div>
+                <div class="card-body">
+                    <dl class="row">
+                        <dt class="col-sm-3 font-weight-bold">Name:</dt>
+                        <dd class="col-sm-9">@Model.Name</dd>
+
+                        
+                        <dt class="col-sm-3 font-weight-bold">Type:</dt>
+                        <dd class="col-sm-9">@Model.Type</dd>
+
+
+                        <dt class="col-sm-3 font-weight-bold">Status:</dt>
+                        <dd class="col-sm-9">
+                            @if (Model.IsOn)
+                            {
+                                @:On
+                            }
+                            else
+                            {
+                                @:Off
+                            }
+                        </dd>
+
+                        <dt class="col-sm-3 font-weight-bold">Room:</dt>
+                        <dd class="col-sm-9">
+                            @if (Model.Room != null)
+                            {
+                                @Model.Room.Name
+                            }
+                            else
+                            {
+                                <span class="text-muted">No room assigned</span>
+                            }
+                        </dd>
+
+                        <dt class="col-sm-3 font-weight-bold">Owner:</dt>
+                        <dd class="col-sm-9">
+                            @if (Model.ApplicationUser != null)
+                            {
+                                @Model.ApplicationUser.UserName
+                            }
+                            else
+                            {
+                                <span class="text-muted">No owner assigned</span>
+                            }
+                        </dd>
+
+                        <dt class="col-sm-3 font-weight-bold">Access Level:</dt>
+                        <dd class="col-sm-9">
+                            @if (Model.AccessLevel != null)
+                            {
+                                @Model.AccessLevel.Name
+                            }
+                            else
+                            {
+                                <span class="text-muted">No access level assigned</span>
+                            }
+                        </dd>
+
+                        <dt class="col-sm-3 font-weight-bold">Two Factor:</dt>
+                        <dd class="col-sm-9">
+                            @if (Model.IsTwoFactorEnabled)
+                            {
+                                @:On
+                            }
+                            else
+                            {
+                                @:Off
+                            }
+                        </dd>
+
+                    </dl>
+                    <hr />
+                    <div class="text-center">
+                        <a href="@Url.Action("Index", "Device")" class="btn btn-outline-primary btn-lg">Back to List</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

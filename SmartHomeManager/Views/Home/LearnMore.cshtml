@@ -1,0 +1,242 @@
+﻿<div class="container">
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Experience the Future of Smart Home Technology</h1>
+            <p class="hero-description">
+                Enhance your home with smart technologies that make life easier and more secure.
+                From cameras and thermostats to smart locks and sensors, manage everything from a central platform and enjoy peace of mind.
+            </p>
+            <a href="@Url.Action("Register", "Account")" class="cta-button">Get Started</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <h2 class="section-title">Why Choose Smart Home?</h2>
+        <div class="feature-list">
+            <div class="feature-item">
+                <h3>Energy Efficiency</h3>
+                <p>Optimize energy usage with thermostats and lighting systems that adapt to your habits.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Enhanced Security</h3>
+                <p>Monitor your home 24/7 with cameras, motion sensors, and smart locks for ultimate peace of mind.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Remote Control</h3>
+                <p>Control all your devices from anywhere, anytime, with a seamless, intuitive app.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="products">
+        <h2 class="section-title">Our Smart Products</h2>
+        <div class="product-list">
+            <div class="product-item">
+                <img src="https://cdn.pixabay.com/photo/2022/01/06/10/37/go-pro-6919164_1280.jpg" alt="Smart Camera" class="product-img" />
+                <h3>Smart Camera</h3>
+                <p>Monitor every corner of your home in real-time with motion detection alerts.</p>
+            </div>
+            <div class="product-item">
+                <img src="https://cdn.pixabay.com/photo/2022/07/28/07/40/energy-crisis-7349347_1280.jpg" alt="Smart Thermostat" class="product-img" />
+                <h3>Smart Thermostat</h3>
+                <p>Adjust your home's temperature remotely for comfort and energy savings.</p>
+            </div>
+            <div class="product-item">
+                <img src="https://cdn.pixabay.com/photo/2020/03/05/17/36/smart-home-4905021_1280.jpg" alt="Smart Lock" class="product-img" />
+                <h3>Smart Lock</h3>
+                <p>Secure your doors effortlessly with smart access and remote locking capabilities.</p>
+            </div>
+            <div class="product-item">
+                <img src="https://cdn.pixabay.com/photo/2018/10/28/17/35/smart-home-3779361_1280.jpg" alt="Motion and Door Sensors" class="product-img" />
+                <h3>Motion and Door Sensors</h3>
+                <p>Receive instant alerts to keep your home safe from intrusions with our intelligent sensors.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <h2 class="cta-title">Take the First Step Toward Smart Living</h2>
+        <p class="cta-description">Transform your home with our smart solutions. Sign up today to explore our full range of products.</p>
+        <div class="container mt-5">
+            <div class="text-center mb-4">
+                <a href="@Url.Action("Login", "Account")" class="btn btn-lg alert-warning mr-3">
+                    <i class="fas fa-user"></i> Get Started
+                </a>
+            </div>
+        </div>
+    </section>
+</div>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #f0f1f6;
+        color: #444;
+        line-height: 1.7;
+    }
+
+    h1, h2, h3 {
+        font-weight: 700;
+    }
+
+    p {
+        font-size: 1.1rem;
+        color: #555;
+        line-height: 1.8;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .hero {
+        background: linear-gradient(15deg, white, #2c3e50);
+        color: #fff;
+        padding: 100px 20px;
+        text-align: center;
+        border-radius: 15px;
+        margin-bottom: 60px;
+    }
+
+    .hero-content {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+    }
+
+    .hero-description {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+    }
+
+    .cta-button {
+        background-color: black;
+        color: white;
+        padding: 16px 32px;
+        font-size: 1.1rem;
+        border-radius: 50px;
+        font-weight: 600;
+        text-transform: uppercase;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+        .cta-button:hover {
+            background-color: white;
+            transform: translateY(-5px);
+        }
+
+    .features {
+        padding: 60px 20px;
+        background: linear-gradient(15deg, #2c3e50, white);
+        text-align: center;
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+        color: #333;
+    }
+
+    .feature-list {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .feature-item {
+        background: linear-gradient(25deg, white, lightgrey);
+        padding: 30px;
+        width: 30%;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .feature-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .feature-item h3 {
+            font-size: 1.6rem;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+    .products {
+        padding: 60px 20px;
+        background: linear-gradient(15deg, white, #2c3e50);
+        text-align: center;
+        margin-top: 60px;
+    }
+
+    .product-list {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .product-item {
+        width: 22%;
+        background: linear-gradient(25deg, white, lightgrey);
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .product-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+        }
+
+    .product-img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        margin-bottom: 20px;
+        border-radius: 8px;
+    }
+
+
+    .product-item h3 {
+        font-size: 1.4rem;
+        margin-bottom: 15px;
+        color: #333;
+    }
+
+    .cta {
+        padding: 60px 20px;
+        background: linear-gradient(15deg, #2c3e50, white);
+        color: #fff;
+        text-align: center;
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        margin-top: 60px;
+    }
+
+    .cta-title {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    .cta-description {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+    }
+</style>

@@ -1,0 +1,216 @@
+﻿@model SmartHomeManager.Models.ApplicationUser
+
+@{
+    ViewData["Title"] = "User Details";
+}
+
+<div class="text-center mb-5">
+    <h2>@ViewData["Title"] - @Model.UserName</h2>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 mx-auto">
+            <div class="card shadow-lg rounded-4 border-dark">
+                <div class="card-header bg-secondary text-white text-center p-4 rounded-top">
+                    <h5 class="card-title">User Information</h5>
+                </div>
+
+                <div class="card-body">
+                    <dl class="row">
+                        <dt class="col-sm-4">Username</dt>
+                        <dd class="col-sm-8">@Model.UserName</dd>
+
+                        <dt class="col-sm-4">Email</dt>
+                        <dd class="col-sm-8">@Model.Email</dd>
+
+                        <dt class="col-sm-4">Email confirmation</dt>
+                        <dd class="col-sm-8">
+                            @if (Model.EmailConfirmed)
+                            {
+                                <span class="badge bg-success">Approved</span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-danger">Unapproved</span>
+                            }
+                        </dd>
+
+                        <dt class="col-sm-4">Şifre Hash</dt>
+                        <dd class="col-sm-8">
+                            <span id="passwordHashSpan">***</span>
+                            <button type="button" id="togglePasswordHash" class="btn btn-link">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </dd>
+
+                        <dt class="col-sm-4">Security Stamp</dt>
+                        <dd class="col-sm-8">
+                            <span id="securityStampSpan">***</span>
+                            <button type="button" id="toggleSecurityStamp" class="btn btn-link">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </dd>
+
+                        <dt class="col-sm-4">Concurrency Stamp</dt>
+                        <dd class="col-sm-8">
+                            <span id="concurrencyStampSpan">***</span>
+                            <button type="button" id="toggleConcurrencyStamp" class="btn btn-link">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </dd>
+
+                        <dt class="col-sm-4">Phone Number</dt>
+                        <dd class="col-sm-8">
+                            @if (string.IsNullOrEmpty(Model.PhoneNumber))
+                            {
+                                <span>Null</span>
+                            }
+                            else
+                            {
+                                @Model.PhoneNumber
+                            }
+                        </dd>
+
+                        <dt class="col-sm-4">Phone Number Confirmation</dt>
+                        <dd class="col-sm-8">
+                            @if (Model.PhoneNumberConfirmed)
+                            {
+                                <span class="badge bg-success">Approved</span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-danger">Unapproved</span>
+                            }
+                        </dd>
+
+                        <dt class="col-sm-4">Two Factor Authentication</dt>
+                        <dd class="col-sm-8">
+                            @if (Model.TwoFactorEnabled)
+                            {
+                                <span class="badge bg-success">Active</span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-danger">Inactive</span>
+                            }
+                        </dd>
+
+                        <dt class="col-sm-4">Account Closing Date</dt>
+                        <dd class="col-sm-8">
+                            @if (!Model.LockoutEnd.HasValue)
+                            {
+                                <span>Null</span>
+                            }
+                            else
+                            {
+                                @Model.LockoutEnd.Value.ToString("dd MMM yyyy HH:mm")
+                            }
+                        </dd>
+
+                        <dt class="col-sm-4">Account Closure Status</dt>
+                        <dd class="col-sm-8">
+                            @if (Model.LockoutEnabled)
+                            {
+                                <span class="badge bg-success">On</span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-danger">Off</span>
+                            }
+                        </dd>
+
+                        <dt class="col-sm-4">Number of Failed Logins</dt>
+                        <dd class="col-sm-8">@Model.AccessFailedCount</dd>
+                    </dl>
+                    <div class="text-center">
+                        <a href="@Url.Action("Index", "User")" class="btn btn-outline-secondary px-4 py-2 rounded-pill shadow-sm">
+                            <i class="fas fa-arrow-left"></i> Go back
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border: 1px solid #000000;
+    }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+    .card-header {
+        background-color: midnightblue;
+        color: #fff;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .badge {
+        font-size: 1rem;
+        padding: 5px 10px;
+        border-radius: 1rem;
+    }
+
+    .btn-link {
+        font-size: 1.2rem;
+        color: #6c7ae0;
+        border: none;
+        background: transparent;
+    }
+
+        .btn-link:hover {
+            color: #4f5d73;
+            text-decoration: none;
+        }
+
+    .btn-outline-secondary {
+        font-weight: 500;
+        text-transform: uppercase;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+        .btn-outline-secondary:hover {
+            background-color: #6c7ae0;
+            color: #fff;
+        }
+</style>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<script>
+    function toggleVisibility(id, value) {
+        var span = document.getElementById(id);
+        if (span.innerText === "***") {
+            span.innerText = value;
+        } else {
+            span.innerText = "***";
+        }
+    }
+
+    document.getElementById("togglePasswordHash").onclick = function () {
+        toggleVisibility("passwordHashSpan", "@Model.PasswordHash");
+    };
+
+    document.getElementById("toggleSecurityStamp").onclick = function () {
+        toggleVisibility("securityStampSpan", "@Model.SecurityStamp");
+    };
+
+    document.getElementById("toggleConcurrencyStamp").onclick = function () {
+        toggleVisibility("concurrencyStampSpan", "@Model.ConcurrencyStamp");
+    };
+</script>

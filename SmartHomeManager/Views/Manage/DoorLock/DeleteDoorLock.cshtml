@@ -1,0 +1,15 @@
+﻿@model SmartHomeManager.Models.DoorLock
+
+@{
+    ViewData["Title"] = "Delete DoorLock";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<p>Are you sure you want to delete the DoorLock <strong>@Model.Name</strong>?</p>
+
+<form asp-action="DeleteDoorLock" method="post">
+    <input type="hidden" name="id" value="@Model.Id" />
+    <button type="submit" class="btn btn-danger">Yes, Delete</button>
+    <a href="@Url.Action("Index", "Manage")" class="btn btn-secondary">Cancel</a>
+</form>

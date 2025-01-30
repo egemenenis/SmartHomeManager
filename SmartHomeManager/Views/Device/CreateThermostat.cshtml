@@ -1,0 +1,145 @@
+﻿@model SmartHomeManager.Models.Thermostat
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card shadow-sm rounded-3">
+                <div class="card-header bg-gradient text-white text-center">
+                    <h3 style="color:black">Create Thermostat</h3>
+                </div>
+                <div class="card-body">
+
+                    <form asp-action="CreateThermostat" method="post" class="form-horizontal">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group mb-3">
+                                    <label asp-for="Name" class="form-label">Thermostat Name</label>
+                                    <input asp-for="Name" class="form-control" placeholder="Enter Thermostat Name" />
+                                    <span asp-validation-for="Name" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-group mb-3">
+                                    <label asp-for="Type" class="form-label">Device Type</label>
+                                    <input asp-for="Type" class="form-control" value="Thermostat" readonly />
+                                    <span asp-validation-for="Type" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-group mb-3 form-check">
+                                    <input asp-for="IsOn" type="checkbox" class="form-check-input" />
+                                    <label class="form-check-label" for="IsOn">Turn On</label>
+                                    <span asp-validation-for="IsOn" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-group mb-3">
+                                    <label asp-for="Temperature" class="form-label">Temperature</label>
+                                    <input asp-for="Temperature" class="form-control" placeholder="Set Temperature" />
+                                    <span asp-validation-for="Temperature" class="text-danger"></span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group mb-3">
+                                    <label asp-for="ApplicationUserId" class="form-label">Select Owner</label>
+                                    <select asp-for="ApplicationUserId" class="form-control" asp-items="@(new SelectList(ViewBag.Users, "Id", "UserName"))">
+                                        <option value="">Select a Owner</option>
+                                    </select>
+                                    <span asp-validation-for="ApplicationUserId" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-group mb-3">
+                                    <label asp-for="RoomId" class="form-label">Select Room</label>
+                                    <select asp-for="RoomId" class="form-control" asp-items="@(new SelectList(ViewBag.Rooms, "Id", "Name"))">
+                                        <option value="">Select a Room</option>
+                                    </select>
+                                    <span asp-validation-for="RoomId" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-group mb-3">
+                                    <label asp-for="DeviceType" class="form-label">Device Type</label>
+                                    <input asp-for="DeviceType" class="form-control" value="Thermostat" readonly />
+                                    <span asp-validation-for="DeviceType" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-group text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg w-100 shadow-sm">Add Thermostat</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="card-footer text-center">
+                    <a asp-action="CreateDevice" class="btn btn-secondary btn-sm">Back to Add Device</a>
+                    <a href="@Url.Action("Index", "Device")" class="btn btn-secondary btn-sm">Back to List</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .card-header {
+        background-color: #007bff;
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    .card-body {
+        padding: 2rem;
+    }
+
+    .form-label {
+        font-weight: bold;
+    }
+
+    .form-check-label {
+        font-weight: normal;
+    }
+
+    .form-control {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .btn {
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    .card-footer {
+        background-color: #f9f9f9;
+        padding: 1rem;
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+    }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #004085;
+        }
+
+    .btn-secondary {
+        background-color: #6c757d;
+        border-color: #6c757d;
+    }
+
+        .btn-secondary:hover {
+            background-color: #5a6268;
+            border-color: #545b62;
+        }
+
+    .shadow-sm {
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-check-input {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .form-check-label {
+        font-size: 1rem;
+    }
+</style>

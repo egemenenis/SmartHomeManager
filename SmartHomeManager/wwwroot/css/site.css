@@ -1,0 +1,54 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+    border-color: #007bff;
+    background-color: #007bff;
+}
+
+.custom-control-input {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.custom-control-label {
+    font-size: 0.875rem;
+    margin-left: 0.5rem;
+}
+
+    .custom-control-label::before {
+        width: 1.25rem;
+        height: 1.25rem;
+        border-radius: 0.25rem;
+        border: 2px solid #007bff;
+        background-color: #fff;
+    }
+
+    .custom-control-label::after {
+        border-color: #fff;
+    }
+
+.custom-control {
+    display: inline-block;
+    margin-top: 0.5rem;
+}
