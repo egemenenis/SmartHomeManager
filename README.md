@@ -62,3 +62,26 @@ Run the following command to start the application:
 ```
 dotnet run
 ```
+
+<img src="https://github.com/egemenenis/Project_Photos/blob/main/SmartHomeManager_Data/1.png">
+<img src="https://github.com/egemenenis/Project_Photos/blob/main/SmartHomeManager_Data/2.1.png">
+<img src="https://github.com/egemenenis/Project_Photos/blob/main/SmartHomeManager_Data/2.2.png">
+<img src="https://github.com/egemenenis/Project_Photos/blob/main/SmartHomeManager_Data/3.png">
+<img src="https://github.com/egemenenis/Project_Photos/blob/main/SmartHomeManager_Data/4.png">
+<img src="https://github.com/egemenenis/Project_Photos/blob/main/SmartHomeManager_Data/5.png">
+<img src="https://github.com/egemenenis/Project_Photos/blob/main/SmartHomeManager_Data/6.png">
+<img src="https://github.com/egemenenis/Project_Photos/blob/main/SmartHomeManager_Data/7.png">
+<img src="https://github.com/egemenenis/Project_Photos/blob/main/SmartHomeManager_Data/8.png">
+<img src="https://github.com/egemenenis/Project_Photos/blob/main/SmartHomeManager_Data/9.png">
+<img src="https://github.com/egemenenis/Project_Photos/blob/main/SmartHomeManager_Data/10.png">
+<img src="https://github.com/egemenenis/Project_Photos/blob/main/SmartHomeManager_Data/11.png">
+<img src="https://github.com/egemenenis/Project_Photos/blob/main/SmartHomeManager_Data/12.png">
+<img src="https://github.com/egemenenis/Project_Photos/blob/main/SmartHomeManager_Data/13.png">
+<img src="https://github.com/egemenenis/Project_Photos/blob/main/SmartHomeManager_Data/14.png">
+<img src="https://github.com/egemenenis/Project_Photos/blob/main/SmartHomeManager_Data/15.png">
+<img src="https://github.com/egemenenis/Project_Photos/blob/main/SmartHomeManager_Data/16.png">
+<img src="https://github.com/egemenenis/Project_Photos/blob/main/SmartHomeManager_Data/17.png">
+<img src="https://github.com/egemenenis/Project_Photos/blob/main/SmartHomeManager_Data/18.png">
+<img src="https://github.com/egemenenis/Project_Photos/blob/main/SmartHomeManager_Data/19.png">
+<img src="https://github.com/egemenenis/Project_Photos/blob/main/SmartHomeManager_Data/20.png">
+<img src="https://github.com/egemenenis/Project_Photos/blob/main/SmartHomeManager_Data/21.png">
