@@ -1,4 +1,4 @@
-# AuthApp
+# SmartHomeManager
 
 Smart Home Manager is an intuitive application developed on ASP.NET Core, utilizing the framework's interface structure for service management. This design allows for easy integration and efficient control of smart home devices, including sensors, cameras, thermostats, and door locks. The app provides a unified platform to monitor and optimize your home’s security, comfort, and energy efficiency, ensuring seamless and flexible operation.
 
