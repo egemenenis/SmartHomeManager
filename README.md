@@ -71,7 +71,6 @@ dotnet run
 <img src="https://github.com/egemenenis/Project_Photos/blob/main/SmartHomeManager_Data/5.PNG">
 <img src="https://github.com/egemenenis/Project_Photos/blob/main/SmartHomeManager_Data/6.PNG">
 <img src="https://github.com/egemenenis/Project_Photos/blob/main/SmartHomeManager_Data/7.PNG">
-<img src="https://github.com/egemenenis/Project_Photos/blob/main/SmartHomeManager_Data/8.PNG">
 <img src="https://github.com/egemenenis/Project_Photos/blob/main/SmartHomeManager_Data/9.PNG">
 <img src="https://github.com/egemenenis/Project_Photos/blob/main/SmartHomeManager_Data/10.PNG">
 <img src="https://github.com/egemenenis/Project_Photos/blob/main/SmartHomeManager_Data/11.PNG">
