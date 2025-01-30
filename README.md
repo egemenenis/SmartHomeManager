@@ -34,7 +34,6 @@ Open the `appsettings.json` file and update the connection string as follows:
     "Host": "smtp.gmail.com",
     "Port": 587
   }
-}
 ```
 - Replace {SENDERMAIL} with your email address.
 - Replace {PASSWORD} with your password.
